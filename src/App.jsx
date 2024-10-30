@@ -14,7 +14,6 @@ const App = () => {
       await ZOHO.CREATOR.init();
       const queryParams = await ZOHO.CREATOR.UTIL.getQueryParams();
       const customerObj = await fetchRecord(queryParams.customer);
-      console.log(customerObj);
       setCustomerData(customerObj);
       setCriteria(() => encodeURIComponent(`"Questionnaire Form"."Customer"=${queryParams.customer}`));
       setLoading(false);
