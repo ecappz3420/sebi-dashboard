@@ -33,7 +33,7 @@ const App = () => {
           <div className='p-2 rounded shadow text-end bg-white mb-3'>
             <div className='flex justify-between'>
               <div className='font-bold'>Dashboard</div>
-              <div className='text-sm'>{customerData.Contact_Person_Name.display_value}</div>
+              <div className='text-sm'>{customerData.Company_name}</div>
             </div>
           </div>
           <div className="flex gap-2">
